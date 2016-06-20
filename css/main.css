@@ -1,3 +1,36 @@
-body {
-	background-color: pink;
+@import url(https://fonts.googleapis.com/css?family=Wire+One);
+
+html {
+	height: 100%;
+	width: 100%;
 }
+
+body {
+	height: 100%;
+	width: 100%;
+	
+}
+
+div#opacity {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	background-size: cover;
+	margin: 0 auto;
+}
+
+div#home_page {
+	background-image: url(http://bit.ly/28JeRs1);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	/*image-resolution: 300dpi;*/
+}
+
+p {
+	font-family: 'Wire One', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+
