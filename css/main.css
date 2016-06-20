@@ -22,17 +22,13 @@ div#opacity {
 
 div#home_page {
 	background-image: url(http://bit.ly/28JeRs1);
-	/*background-repeat:no-repeat;
-	background-size:contain;
-	background-position:center;*/
-	/*image-resolution: 300dpi;*/
 	background-position: center center;
-	 background-repeat: no-repeat;
-	  background-attachment: fixed;
-	    background-size: cover;
-	    background-color: #464646;
-	    height: 100%;
-	    width: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed; /*viewport does not move when content's height is bigger than img height*/
+	background-size: cover;
+	background-color: #464646; /*color when loading image*/
+	height: 100%;
+	width: 100%;
 }
 
 p {
@@ -40,6 +36,17 @@ p {
 	font-size: 50px;
 	text-align: center;
 	color: white;
+}
+
+a.btn.btn-default {
+	background-color: transparent;
+	border:  white solid 2px;
+	border-radius: 5px;
+	color: white;
+}
+
+a.btn.btn-default:hover {
+	background-color: pink;
 }
 
 .container {
