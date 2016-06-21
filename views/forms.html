@@ -7,7 +7,6 @@
   <link rel="stylesheet" type="text/css" href="../css/forms.css">
   
   <script src="http://code.jquery.com/jquery.js"></script>
-  <script type="text/javascript" src="../js/bootstrap-datepicker.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../js/main.js"></script>
 </head>
@@ -15,7 +14,7 @@
   
   <div id="forms_page">
     <div id="mint_color_block"></div>
-    <form action="" method="POST" role="form">
+    <form name="myForm" action="" method="POST" onsubmit="return formValidation()" role="form">
       <legend>Hiking Form</legend>
         <div class="row">
           <div class="col-md-4">
@@ -43,7 +42,7 @@
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker1'>
                     <label for="">Start Date</label>
-                    <input type='date' class="form-control" />
+                    <input type='date' required class="form-control" />
                 </div>
             </div>
         </div>
@@ -56,8 +55,8 @@
         <div class='col-sm-6'>
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker1'>
-                    <label for="">Date</label>
-                    <input type='date' class="form-control" />
+                    <label for="">End Date</label>
+                    <input type='date' required class="form-control" />
                 </div>
             </div>
         </div>
@@ -74,17 +73,17 @@
     
       <div class="form-group">
         <label for="">Name</label>
-        <input type="text" class="form-control" id="" placeholder="Name">
+        <input type="text" name="form_name" class="form-control" id="" placeholder="Name">
       </div>
 
       <div class="form-group">
         <label for="">Email</label>
-        <input type="text" class="form-control" id="" placeholder="Email">
+        <input type="text" name="form_name" class="form-control" id="" placeholder="Email">
       </div>
 
       <div class="form-group">
         <label for="">Phone</label>
-        <input type="text" class="form-control" id="" placeholder="Phone">
+        <input type="text" name="form_name" class="form-control" id="" placeholder="Phone">
       </div>
 
       <label for="">Major Trails</label>
@@ -102,7 +101,7 @@
 
     
     
-      <textarea class="form-control" rows="3">Notes</textarea>
+      <textarea type="text" class="form-control" rows="3">Notes</textarea>
       
       
       
