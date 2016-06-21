@@ -10,19 +10,25 @@
   <script type="text/javascript" src="../js/main.js"></script>
 </head>
 <body>
+  
   <div id="forms_page">
+    <div id="mint_color_block"></div>
     <form action="" method="POST" role="form">
       <legend>Hiking Form</legend>
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-4">
            <p>Seattle offers a mecca of hiking and outdoor activities for it's residents. With over 4.35 million trees in the city alone, many wilderness trails are a quick drive from this urban forest. With Mt. Rainer and the Cascade mountain range to the South of Seattle and the Olympic mountain range to the West, there are always opportunities to conquer your next trail. Fill out the form below to get started!</p>
            
           </div>
           
-          <div class="col-md-4">
-             <img src="http://bit.ly/21mCM5y">
+          <div class="col-md-8">
+             <img src="http://bit.ly/28KoWsU">
+
            
           </div>
+
+         
+
         </div>
 
 
@@ -61,6 +67,26 @@
         <option value="four">Cascade Pass</option>
         <option value="five">Harry Ridge</option>
       </select>
+
+      <div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
+</div>
     
       <textarea class="form-control" rows="3">Notes</textarea>
       
@@ -68,6 +94,7 @@
       
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+    
   </div>
 </body>
 </html>

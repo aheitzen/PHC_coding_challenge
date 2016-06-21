@@ -5,3 +5,8 @@ console.log("I work");
 // {{#> layout }}
 //   My Content
 // {{/layout}}
+
+
+$('#datetimepicker1').data("DateTimePicker").FUNCTION({
+
+});
