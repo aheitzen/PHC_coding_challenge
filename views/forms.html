@@ -3,7 +3,8 @@
 <head>
   <title></title>
   <link rel="stylesheet" media="screen" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/views/forms.html">
+  <link rel="stylesheet" type="text/css" href="views/forms.html">
+  <link rel="stylesheet" type="text/css" href="css/forms.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -11,12 +12,40 @@
 </head>
 <body>
   <form action="" method="POST" role="form">
-    <legend>Form title</legend>
+    <legend>Hiking Form</legend>
+
+    <p>Seattle offers a mecca of hiking and outdoor activities for it's residents. With over 4.35 million trees in the city alone, many wilderness trails are a quick drive from this urban forest. With Mt. Rainer and the Cascade mountain range to the South of Seattle and the Olympic mountain range to the West, there are always opportunities to conquer your next trail. Fill out the form below to get started!</p>
   
     <div class="form-group">
-      <label for="">label</label>
-      <input type="text" class="form-control" id="" placeholder="Input field">
+      <label for="">Name</label>
+      <input type="text" class="form-control" id="" placeholder="Name">
     </div>
+
+      <div class="form-group">
+      <label for="">Email</label>
+      <input type="text" class="form-control" id="" placeholder="Email">
+    </div>
+
+      <div class="form-group">
+      <label for="">Phone</label>
+      <input type="text" class="form-control" id="" placeholder="Phone">
+    </div>
+
+  <label for="">Major Trails</label>
+  <select class="form-control">
+
+    <option value="one">Chelan Lakeshore Trail</option>
+    <option value="two">Skyscraper Pass</option>
+    <option value="three">Easy Pass</option>
+    <option value="four">Cascade Pass</option>
+    <option value="five">Harry Ridge</option>
+</select>
+
+
+
+<textarea class="form-control" rows="3">Notes</textarea>
+
+<img src="http://bit.ly/28Kbq9L">
   
     
   
