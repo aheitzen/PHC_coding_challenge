@@ -10,15 +10,10 @@ body {
 	width: 100%;
 }
 
-div#opacity {
-	height: 100%;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
 
-}
 
 div#home_page {
-	background-image: url(http://bit.ly/28JeRs1);
+	background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://bit.ly/28JeRs1);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed; /*viewport does not move when content's height is bigger than img height*/
@@ -26,37 +21,51 @@ div#home_page {
 	background-color: #464646; /*color when loading image*/
 	height: 100%;
 	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 p {
+	font-family:Tahoma, Geneva, sans-serif;
 	font-family: 'Wire One', sans-serif;
-	font-size: 50px;
+	font-size: 100px;
 	text-align: center;
 	color: white;
+	margin-bottom: 20px;
 }
 
 a.btn.btn-default {
 	background-color: transparent;
 	border:  white solid 2px;
-	border-radius: 5px;
+	border-radius: 3px;
 	color: white;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-family: 'Wire One', sans-serif;
+	font-size: 40px;
+	padding: 0 80px 0 80px; /*top right bottom left*/
+	-webkit-animation-name: mintPulse;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+
+}
+
+@-webkit-keyframes mintPulse {
+  from {-webkit-box-shadow: 0 0 7px #000;}
+  50% {-webkit-box-shadow: 0 0 14px #98FFCC;}
+  to {-webkit-box-shadow: 0 0 7px #000;}
 }
 
 a.btn.btn-default:hover {
-	border-color: pink;
-	color: pink;
-}
-
-.container {
-	padding-top: 10%;
+	border-color: #98FFCC;
+	color: #98FFCC;
+	-webkit-animation-play-state: paused;
 }
 
 .row {
 	text-align: center;
 }
 
-img {
-	height: 20px;
-	width: 20px;
-}
+
 
