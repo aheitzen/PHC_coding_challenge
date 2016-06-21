@@ -11,103 +11,78 @@
   <script type="text/javascript" src="../js/main.js"></script>
 </head>
 <body>
-  
   <div id="forms_page">
-    <div id="mint_color_block"></div>
     <form id="master_form" name="myForm" action="" method="POST" onsubmit="return formValidation()" role="form">
       <legend>Hiking Form</legend>
         <div class="row">
           <div class="col-md-4">
            <p>Seattle offers a mecca of hiking and outdoor activities for it's residents. With over 4.35 million trees in the city alone, many wilderness trails are a quick drive from this urban forest. With Mt. Rainer and the Cascade mountain range to the South of Seattle and the Olympic mountain range to the West, there are always opportunities to conquer your next trail. Fill out the form below to get started!</p>
-           
           </div>
           
           <div class="col-md-8">
              <img src="http://bit.ly/28KoWsU">
-
-           
           </div>
-
-         
-
         </div>
 
-
-
-
-
-  <div class="container">
-    <div class="row">
-        <div class='col-sm-6'>
-            <div class="form-group">
+        <div class="container">
+          <div class="row">
+            <div class='col-sm-6'>
+              <div class="form-group">
                 <div class='input-group date' id='datetimepicker1'>
-                    <label for="">Start Date</label>
-                    <input type='date' required class="form-control" />
+                  <label for="">Start Date</label>
+                  <input type='date' required class="form-control" />
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
 
-
-<div class="container">
-    <div class="row">
-        <div class='col-sm-6'>
-            <div class="form-group">
+        <div class="container">
+          <div class="row">
+            <div class='col-sm-6'>
+              <div class="form-group">
                 <div class='input-group date' id='datetimepicker1'>
-                    <label for="">End Date</label>
-                    <input type='date' required class="form-control" />
+                  <label for="">End Date</label>
+                  <input type='date' required class="form-control" />
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
 
 
+        <div class="form-group">
+          <label for="">Name</label>
+          <input type="text" name="form_name" class="form-control" id="" placeholder="Name">
+        </div>
 
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" name="form_name" class="form-control" id="" placeholder="Email">
+        </div>
 
-
-
-
-
-    
-      <div class="form-group">
-        <label for="">Name</label>
-        <input type="text" name="form_name" class="form-control" id="" placeholder="Name">
-      </div>
-
-      <div class="form-group">
-        <label for="">Email</label>
-        <input type="text" name="form_name" class="form-control" id="" placeholder="Email">
-      </div>
-
-      <div class="form-group">
-        <label for="">Phone</label>
-        <input type="text" name="form_name" class="form-control" id="" placeholder="Phone">
-      </div>
+        <div class="form-group">
+          <label for="">Phone</label>
+          <input type="text" name="form_name" class="form-control" id="" placeholder="Phone">
+        </div>
 
       <label for="">Major Trails</label>
-      <select class="form-control">
-        <option value="one">Chelan Lakeshore Trail</option>
-        <option value="two">Skyscraper Pass</option>
-        <option value="three">Easy Pass</option>
-        <option value="four">Cascade Pass</option>
-        <option value="five">Harry Ridge</option>
-      </select>
+        <select class="form-control">
+          <option value="one">Chelan Lakeshore Trail</option>
+          <option value="two">Skyscraper Pass</option>
+          <option value="three">Easy Pass</option>
+          <option value="four">Cascade Pass</option>
+          <option value="five">Harry Ridge</option>
+        </select>
 
       <div class="form-group">
         <input type="hidden" name="beer" value="false" class="form-control">
       </div>
 
-    
-    
       <textarea type="text" class="form-control" rows="3">Notes</textarea>
-      
-      
       
       <button type="post" class="btn btn-primary" id="submit_button">Submit</button>
     </form>
-    
   </div>
 </body>
 </html>
