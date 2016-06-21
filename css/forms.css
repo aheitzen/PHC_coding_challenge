@@ -3,6 +3,12 @@ img {
 	width: 300px;
 }
 
-
+#forms_page p {
+	font-family:Tahoma, Geneva, sans-serif;
+	/*font-family: 'Wire One', sans-serif;*/
+	color: black;
+	font-size: 20px;
+	float: right;
+}
 
 

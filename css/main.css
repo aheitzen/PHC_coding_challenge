@@ -10,21 +10,18 @@ body {
 	width: 100%;
 }
 
-
-
 div#home_page {
 	background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://bit.ly/28JeRs1);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed; /*viewport does not move when content's height is bigger than img height*/
 	background-size: cover;
-	background-color: #464646; /*color when loading image*/
+	background-color: black; /*color when loading image*/
 	height: 100%;
 	width: 100%;
 	display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 p {
@@ -39,7 +36,7 @@ p {
 a.btn.btn-default {
 	background-color: transparent;
 	border:  white solid 2px;
-	border-radius: 3px;
+	border-radius: 0;
 	color: white;
 	font-family:Tahoma, Geneva, sans-serif;
 	font-family: 'Wire One', sans-serif;
@@ -48,7 +45,6 @@ a.btn.btn-default {
 	-webkit-animation-name: mintPulse;
 	-webkit-animation-duration: 2s;
 	-webkit-animation-iteration-count: infinite;
-
 }
 
 @-webkit-keyframes mintPulse {
