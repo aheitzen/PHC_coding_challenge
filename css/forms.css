@@ -1,17 +1,30 @@
-
+label#hiking_form {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-family: 'Wire One', sans-serif;
+	color: white;
+	font-size: 60px;
+	margin-top: 15px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #forms_page {
 	height: 100%;
 	width: 100%;
 	background-color: black;
 
+
 }
 
 #forms_page p {
 	font-family:Tahoma, Geneva, sans-serif;
-	/*font-family: 'Wire One', sans-serif;*/
-	color: #98FFCC;
-	font-size: 20px;
+	font-family: 'Wire One', sans-serif;
+	color: white;
+	font-size: 30px;
+	text-align: justify;
+	margin: 2%;
+ 
 }
 
 
@@ -20,6 +33,21 @@
 	height: 120px;
 	width: 100%;
 	position: absolute;
+}
+
+/*button#submit_button.btn.btn-primary {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}*/
+
+textarea.form-group.col-xs-10.col-sm-4.col-md-4.col-lg-4 {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
 }
 
 
