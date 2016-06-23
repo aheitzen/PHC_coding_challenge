@@ -59,6 +59,8 @@ textarea {
     margin-bottom: 40px;
     width: 31%;
     border-radius: 5px;
+    background-color: #1F1F1D; 
+
 
 
 
@@ -71,6 +73,7 @@ img {
 	border: solid black 10px;
 	float: left;
 	max-width: 100%;
+	
 }
 
 /*div.form-group.col-xs-10.col-sm-4.col-md-4.col-lg-4 {
@@ -84,6 +87,11 @@ div#text_field_group {
 }
 
 input.form-control {
+	background-color: #1F1F1D;
+	border-color: #1F1F1D;
+}
+
+select.form-control {
 	background-color: #1F1F1D;
 	border-color: #1F1F1D;
 }
