@@ -2,11 +2,9 @@
 <html>
 <head>
   <title></title>
-  
   <link rel="stylesheet" media="screen" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="stylesheet" type="text/css" href="../css/forms.css">
-  
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../js/main.js"></script>
@@ -14,89 +12,55 @@
 <body>
   <div id="forms_page">
     <div id="navbar">
-    <form id="myForm"  name="myForm" action="" method="POST" onsubmit="formValidation(event)" role="form">
-      <label id="hiking_form">Hiking Form</label>
+      <form id="myForm"  name="myForm" action="" method="POST" onsubmit="formValidation(event)" role="form">
+        <label id="hiking_form">Hiking Form</label>
         <div class="row">
-          <!-- <div class="col-md-4"> -->
-            <p class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">Seattle offers a mecca of hiking and outdoor activities for it's residents. With over 4.35 million trees in the city alone, many wilderness trails are a quick drive from this urban forest. With Mt. Rainer and the Cascade mountain range to the South of Seattle and the Olympic mountain range to the West, there are always opportunities to conquer your next trail. Fill out the form below to get started!</p>
-
-            <div id="text_field_group">
-
-
-              <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
-                <div id='datetimepicker1'>
-                    <label for="">Start Date</label>
-                    <input type='date' name="start_date" required class="form-control" />
-                </div>
+          <p class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">Seattle offers a mecca of hiking and outdoor activities for it's residents. With over 4.35 million trees in the city alone, many wilderness trails are a quick drive from this urban forest. With Mt. Rainer and the Cascade mountain range to the South of Seattle and the Olympic mountain range to the West, there are always opportunities to conquer your next trail. Fill out the form below to get started!</p>
+          <div id="text_field_group">
+            <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
+              <div id='datetimepicker1'>
+                <label for="">Start Date</label>
+                <input type='date' name="start_date" required class="form-control" />
               </div>
-           
-
-          
-              <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
-                <div id='datetimepicker1'>
-                    <label for="">End Date</label>
-                    <input type='date' name="end_date" required class="form-control" />
-                </div>
+            </div>
+            <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
+              <div id='datetimepicker1'>
+                <label for="">End Date</label>
+                <input type='date' name="end_date" required class="form-control" />
               </div>
-          
-          <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
-          <label for="">Major Trails</label>
-          <select required class="form-control">
-            <option value="one">Chelan Lakeshore Trail</option>
-            <option value="two">Skyscraper Pass</option>
-            <option value="three">Easy Pass</option>
-            <option value="four">Cascade Pass</option>
-            <option value="five">Harry Ridge</option>
-          </select>
+            </div>
+            <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
+              <label for="">Major Trails</label>
+              <select required class="form-control">
+                <option value="one">Chelan Lakeshore Trail</option>
+                <option value="two">Skyscraper Pass</option>
+                <option value="three">Easy Pass</option>
+                <option value="four">Cascade Pass</option>
+                <option value="five">Harry Ridge</option>
+              </select>
+            </div>
+            <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
+              <label for="">Name</label>
+              <input type="text" name="name" class="form-control" minlength="5" id="" placeholder="Name">
+            </div>
+            <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
+              <label for="">Email</label>
+              <input type="email" name="email" class="form-control" id="" placeholder="Email">
+            </div>
+            <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
+              <label for="">Phone</label>
+              <input type="tel" required name="phone" class="form-control" id="" placeholder="Phone">
+            </div>
+            <div class="form-group">
+              <input type="hidden" name="beer" value="false" class="form-control">
+            </div>
           </div>
-           
-
-
-          <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
-            <label for="">Name</label>
-            <input type="text" name="name" class="form-control" minlength="5" id="" placeholder="Name">
-          </div>
-
-          <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
-            <label for="">Email</label>
-            <input type="email" name="email" class="form-control" id="" placeholder="Email">
-          </div>
-
-          <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
-            <label for="">Phone</label>
-            <input type="tel" required name="phone" class="form-control" id="" placeholder="Phone">
-          </div>
-
-       
-
-        <div class="form-group">
-          <input type="hidden" name="beer" value="false" class="form-control">
         </div>
-
-        </div>
-       
-          
-        </div>
-
-         <img src="http://bit.ly/28OCZep">
-
-
-
-         
-
-
-   
-          <textarea rows="10" name="text_area" placeholder="Notes"></textarea>
-    
-
-        
+        <img src="http://bit.ly/28OCZep">
+        <textarea rows="10" name="text_area" placeholder="Notes"></textarea>
         <button type="post" class="btn btn-primary" id="submit_button">Submit</button>
-
-
-
-    
-  </form>
-  </div>
+      </form>
+    </div>
   </div>
 </body>
 </html>
