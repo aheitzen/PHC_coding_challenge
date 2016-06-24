@@ -5,8 +5,6 @@ function formValidation(event) {
 		alert("I AM ERROR");
 		event.preventDefault();
 		hasBeenClicked = true;
-		// console.log(event);
-
 	} else {
 		var values = {};
 		$.each($('#myForm').serializeArray(), function(i, field) {
