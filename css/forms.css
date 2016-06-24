@@ -15,9 +15,6 @@ label#hiking_form {
 	width: 100%;
 	background-color: black;
 	overflow: scroll;
-	
-
-
 }
 
 #forms_page p {
@@ -83,8 +80,9 @@ img {
 	border-right: solid 3px #1F1F1D;
 	border-bottom: solid 3px #1F1F1D;
 	float: left;
-	max-width: 100%;
-	margin-left: 5px;
+	max-width: 90%;
+	margin-left: 3%;
+	margin-bottom: 5%;
 	border-radius: 10px;
 	
 }
@@ -116,6 +114,12 @@ div#text_field_group {
 div.row {
 	margin: 0;
 	padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+   input[type=text], textarea {
+        width:75%;
+    }
 }
 
 
