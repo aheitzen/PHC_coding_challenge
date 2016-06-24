@@ -25,7 +25,7 @@
               <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
                 <div id='datetimepicker1'>
                     <label for="">Start Date</label>
-                    <input type='date' required class="form-control" />
+                    <input type='date' name="start_date" required class="form-control" />
                 </div>
               </div>
            
@@ -34,7 +34,7 @@
               <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
                 <div id='datetimepicker1'>
                     <label for="">End Date</label>
-                    <input type='date' required class="form-control" />
+                    <input type='date' name="end_date" required class="form-control" />
                 </div>
               </div>
           
@@ -53,17 +53,17 @@
 
           <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
             <label for="">Name</label>
-            <input type="text" name="form_name" class="form-control" minlength="5" id="" placeholder="Name">
+            <input type="text" name="name" class="form-control" minlength="5" id="" placeholder="Name">
           </div>
 
           <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
             <label for="">Email</label>
-            <input type="email" name="form_name" class="form-control" id="" placeholder="Email">
+            <input type="email" name="email" class="form-control" id="" placeholder="Email">
           </div>
 
           <div class="form-group col-xs-8 col-sm-2 col-md-2 col-lg-2">
             <label for="">Phone</label>
-            <input type="tel" required name="form_name" class="form-control" id="" placeholder="Phone">
+            <input type="tel" required name="phone" class="form-control" id="" placeholder="Phone">
           </div>
 
        
@@ -83,8 +83,10 @@
 
          
 
-           
-        <textarea type="text" rows="10" >Notes</textarea>
+
+        <div class="form-group">
+          <textarea rows="10" name="text_area" placeholder="Notes"></textarea>
+      </div>
 
         
         <button type="post" class="btn btn-primary" id="submit_button">Submit</button>

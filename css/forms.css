@@ -70,11 +70,14 @@ textarea {
 
 
 
+
 }
+
+
 
 img {
 	height: 250px;
-	width: 800px;
+	width: 400px;
 	border-top: solid 3px #505049; /*need a darker color*/
 	border-left: solid 3px #505049; /*need a darker color*/
 	border-right: solid 3px #1F1F1D;
@@ -95,12 +98,24 @@ input.form-control {
 	border-color: #1F1F1D;
 	color: #d9d9d9;
 
+
 }
 
 select.form-control {
 	background-color: #1F1F1D;
 	border-color: #1F1F1D;
 	color: #d9d9d9;
+}
+
+div#text_field_group {
+	float: none;
+
+    text-align: none;
+}
+
+div.row {
+	margin: 0;
+	padding: 0;
 }
 
 
